@@ -123,6 +123,19 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+    .card-title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+.card-title:hover {
+  color: var(--blue);
+}
+
 
     .card {
       background: var(--white);
@@ -181,6 +194,7 @@
   </header>
 
   <nav>
+    <a href="#Home">Home</a>
     <a href="#about">About</a>
     <a href="#actions">Actions</a>
     <a href="#join">Join</a>
@@ -196,23 +210,31 @@
     <button class="btn">Learn More</button>
   </section>
 
-  <section id="actions">
-    <h2>🌿 Our Core Actions</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Monitor</h3>
-        <p>Use sensors and data analytics to track real-time environmental impact.</p>
-      </div>
-      <div class="card">
-        <h3>Reduce</h3>
-        <p>Implement smart technologies that lower emissions and waste output.</p>
-      </div>
-      <div class="card">
-        <h3>Empower</h3>
-        <p>Engage communities and developers to build climate-conscious solutions.</p>
-      </div>
-    </div>
-  </section>
+ <section id="actions">
+  <h2>🌿 Our Core Actions</h2>
+  <div class="cards">
+
+  <div class="card" onclick="monitor()">
+    <a href="monitor.html" class="card-title">Monitor</a>
+    <p>Use sensors and data analytics to track real-time environmental impact.</p>
+  </div>
+
+  <div class="card">
+    <a href="reduce.js" class="card-title">Reduce</a>
+    <p>Implement smart technologies that lower emissions and waste output.</p>
+  </div>
+
+  <div class="card">
+    <a href="empower.js" class="card-title">Empower</a>
+    <p>Engage communities and developers to build climate-conscious solutions.</p>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
 
   <section class="join-section" id="join">
     <h2>🤝 Join the Climate Code Movement</h2>
